@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AccuilController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="319.0" style="-fx-background-color: #b3e5fc;">
+         <children>
+            <Pane prefHeight="170.0" prefWidth="330.0">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLANE" layoutX="71.0" layoutY="110.0" size="55" />
+                  <Label layoutX="114.0" layoutY="75.0" text="Oiseau Bleu" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="acuil" mnemonicParsing="false" onAction="#versaccuil" prefHeight="72.0" prefWidth="330.0" style="-fx-background-color: #b3e5fc;" text="Accuil" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="HOME" />
+               </graphic>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="hotel" mnemonicParsing="false" onAction="#vershotel" prefHeight="74.0" prefWidth="330.0" style="-fx-background-color: #b3e5fc;" text="Hotel" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="HOTEL" />
+               </graphic>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="voyageorganise" mnemonicParsing="false" onAction="#versvoyageorganise" prefHeight="74.0" prefWidth="330.0" style="-fx-background-color: #b3e5fc;" text="Voyage Organisé" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USERS" />
+               </graphic>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="vol" mnemonicParsing="false" prefHeight="78.0" prefWidth="330.0" style="-fx-background-color: #b3e5fc;" text="Vol" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLANE" />
+               </graphic>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="compte" mnemonicParsing="false" onAction="#verscompte" prefHeight="78.0" prefWidth="330.0" style="-fx-background-color: #b3e5fc;" text="Mon Compte" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USER" />
+               </graphic>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="contact" mnemonicParsing="false" onAction="#verscontact" prefHeight="78.0" prefWidth="330.0" style="-fx-background-color: #b3e5fc;" text="Contact" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PHONE" />
+               </graphic>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="parametre" mnemonicParsing="false" prefHeight="86.0" prefWidth="330.0" style="-fx-background-color: #b3e5fc;" text="Parametre" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="COG" />
+               </graphic>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="240.0" fitWidth="681.0" layoutX="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/image/i3.jpg" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="319.0" layoutY="353.0" prefHeight="252.0" prefWidth="682.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="60.799993896484374" minHeight="10.0" prefHeight="60.799993896484374" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="68.8000244140625" minHeight="10.0" prefHeight="57.6000244140625" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.7999755859375" minHeight="10.0" prefHeight="76.80003662109374" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.799963378906256" minHeight="10.0" prefHeight="55.19996337890626" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="135.0" layoutY="17.0" text="Lieu de Départ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="143.0" layoutY="17.0" text="Destination">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <ComboBox fx:id="depart" layoutX="63.0" layoutY="14.0" onAction="#selectdepart" prefWidth="150.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ComboBox fx:id="destination" layoutX="64.0" layoutY="14.0" onAction="#selectretour" prefWidth="150.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="108.0" layoutY="8.0" text="Choisissez la date de Départ" />
+                  <DatePicker fx:id="datedepart" layoutX="105.0" layoutY="36.0" onAction="#selectdatedepart" prefHeight="25.0" prefWidth="149.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="97.0" layoutY="7.0" text="Ajoutez le Retour" />
+                  <DatePicker fx:id="dateretour" layoutX="69.0" layoutY="35.0" onAction="#selectdateretour" prefHeight="25.0" prefWidth="150.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="recherche" layoutX="71.0" layoutY="21.0" mnemonicParsing="false" onAction="#chercherdispo" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #E8865C;" text="Rechercher" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Spinner fx:id="personne" layoutX="107.0" layoutY="19.0" onDragDetected="#selectpersonne" prefHeight="25.0" prefWidth="149.0" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" layoutX="320.0" layoutY="236.0" prefHeight="91.0" prefWidth="682.0" text="Votre Confort, Notre Objectif." textFill="#e8865c">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

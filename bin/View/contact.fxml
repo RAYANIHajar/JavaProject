@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ContactController">
+   <children>
+      <Pane prefHeight="209.0" prefWidth="1000.0">
+         <children>
+            <Label alignment="CENTER" layoutX="323.0" layoutY="86.0" prefHeight="73.0" prefWidth="371.0" text="Contact" textFill="#e8865c">
+               <font>
+                  <Font name="System Bold" size="60.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#e8865c" glyphName="SAVE" layoutX="332.0" layoutY="148.0" size="50" />
+         </children>
+      </Pane>
+      <Pane layoutX="-1.0" layoutY="222.0" prefHeight="260.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="124.0" layoutY="23.0" text="Email :" textFill="#b3e5fc">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="189.0" layoutY="93.0" text="hajarrayani19@gmail.com">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="186.0" layoutY="144.0" text="amineelaasri97@gmail.com">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="189.0" layoutY="194.0" text="labaali1998@gmail.com">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#b3e5fc" glyphName="USER" layoutX="95.0" layoutY="54.0" size="25" />
+         </children>
+      </Pane>
+      <Pane layoutX="-1.0" layoutY="460.0" prefHeight="240.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="123.0" layoutY="12.0" text="Numero Télephone :" textFill="#b3e5fc">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="192.0" layoutY="81.0" text="0762959029">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="192.0" layoutY="127.0" text="0659261536">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="192.0" layoutY="174.0" text="0653115123">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#b3e5fc" glyphName="PHONE" layoutX="88.0" layoutY="43.0" size="25" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

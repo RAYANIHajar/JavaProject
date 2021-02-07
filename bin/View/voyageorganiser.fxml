@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VoyageorganiserController">
+   <children>
+      <Pane layoutX="9.0" layoutY="350.0" prefHeight="336.0" prefWidth="240.0">
+         <children>
+            <Label alignment="CENTER" layoutX="63.0" layoutY="27.0" text="Ifrane" textFill="#e8865c">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="104.0" text="1500,00 DH">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="ifraneb1" layoutX="66.0" layoutY="168.0" mnemonicParsing="false" text="Détail" />
+            <Button fx:id="ifraneb2" layoutX="66.0" layoutY="226.0" mnemonicParsing="false" text="L'offre Comprend" />
+         </children>
+      </Pane>
+      <Pane layoutX="271.0" layoutY="348.0" prefHeight="336.0" prefWidth="227.0">
+         <children>
+            <Label layoutX="38.0" layoutY="25.0" text="Marrakech" textFill="#e8865c">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="102.0" text="1450,00 DH">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="marrakechb1" layoutX="54.0" layoutY="168.0" mnemonicParsing="false" text="Détail" />
+            <Button fx:id="marrakechb2" layoutX="54.0" layoutY="225.0" mnemonicParsing="false" text="L'offre Comprend" />
+         </children>
+      </Pane>
+      <Pane layoutX="518.0" layoutY="350.0" prefHeight="336.0" prefWidth="214.0">
+         <children>
+            <Label layoutX="56.0" layoutY="95.0" text="900,00 DH">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="24.0" text="Chaouen" textFill="#e8865c">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="chaouenb1" layoutX="64.0" layoutY="168.0" mnemonicParsing="false" text="Détail" />
+            <Button fx:id="chaouenb2" layoutX="64.0" layoutY="221.0" mnemonicParsing="false" text="L'offre Comprend" />
+         </children>
+      </Pane>
+      <Pane layoutX="759.0" layoutY="353.0" prefHeight="336.0" prefWidth="218.0">
+         <children>
+            <Label layoutX="45.0" layoutY="14.0" text="Merzouga" textFill="#e8865c">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="87.0" text="1100,00 DH">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="merzougab1" layoutX="76.0" layoutY="168.0" mnemonicParsing="false" text="Détail" />
+            <Button fx:id="merzougab2" layoutX="74.0" layoutY="221.0" mnemonicParsing="false" text="L'offre Comprend" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="142.0" fitWidth="240.0" layoutX="9.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/image/i13.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="228.0" layoutX="271.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/image/i14.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="145.0" fitWidth="213.0" layoutX="518.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/image/i15.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="145.0" fitWidth="220.0" layoutX="759.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/image/i12.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="200.0" prefWidth="1000.0">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="590.0" text="VOYAGE L'OISEAU BLEU" textFill="#82b3c9">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Text layoutX="204.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" vous invite a découvrir quelques-unes des plus belles villes marocaines,la beauté de ces villes ne peut être vu que sur place en découvrant leurs capacités naturelles !Un séjour plein d’aventure et d’émotion vous attend !" wrappingWidth="663.0145874023438">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="354.0" style="-fx-background-color: #b3e5fc;" BorderPane.alignment="CENTER">
          <children>
@@ -29,13 +29,13 @@
          <children>
             <Button layoutX="420.0" layoutY="1.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
                <graphic>
-                  <FontAwesomeIcon fill="#b3e5fc" glyphName="CLOSE" />
+                  <FontAwesomeIcon fx:id="fermer" fill="#b3e5fc" glyphName="CLOSE" />
                </graphic></Button>
-            <TextField layoutX="149.0" layoutY="181.0" prefHeight="27.0" prefWidth="170.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #b3e5fc; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="email" layoutX="149.0" layoutY="181.0" prefHeight="27.0" prefWidth="170.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #b3e5fc; -fx-border-width: 0px 0px 2px 0px;" />
             <Accordion layoutX="67.0" layoutY="199.0" />
-            <PasswordField layoutX="149.0" layoutY="247.0" prefHeight="27.0" prefWidth="170.0" promptText="Mpt de passe" style="-fx-background-color: transparent; -fx-border-color: #b3e5fc; -fx-border-width: 0px 0px 2px 0px;" />
-            <Button layoutX="184.0" layoutY="325.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #b3e5fc;" text="Confirmer" />
-            <Hyperlink layoutX="137.0" layoutY="429.0" text="Réinitialiser votre mot de passe" />
+            <PasswordField fx:id="motdepass" layoutX="149.0" layoutY="247.0" prefHeight="27.0" prefWidth="170.0" promptText="Mpt de passe" style="-fx-background-color: transparent; -fx-border-color: #b3e5fc; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="confirmer" layoutX="184.0" layoutY="325.0" mnemonicParsing="false" onAction="#confirmcompte" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #b3e5fc;" text="Confirmer" />
+            <Hyperlink fx:id="reset" layoutX="137.0" layoutY="429.0" onAction="#resetcompte" text="Réinitialiser votre mot de passe" />
             <Text fill="#b3e5fc" layoutX="157.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Se connecter">
                <font>
                   <Font size="23.0" />

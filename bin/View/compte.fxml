@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CompteController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="1033.0">
+         <children>
+            <Label alignment="CENTER" layoutX="363.0" layoutY="64.0" text="Mon Compte" textFill="#b3e5fc">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#b3e5fc" glyphName="USER" layoutX="316.0" layoutY="116.0" size="50" />
+         </children></Pane>
+      <Pane layoutX="37.0" layoutY="162.0" prefHeight="262.0" prefWidth="494.0">
+         <children>
+            <Label layoutX="58.0" layoutY="29.0" text="Réservation Vol :" textFill="#e8865c">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="94.0" text="Impot">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="147.0" text="Sous-Total">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="204.0" text="Total">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="volimpot" layoutX="166.0" layoutY="90.0" />
+            <TextField fx:id="volstotal" layoutX="166.0" layoutY="144.0" />
+            <TextField fx:id="voltotal" layoutX="166.0" layoutY="201.0" />
+            <FontAwesomeIcon fill="#e8865c" glyphName="PLANE" layoutX="35.0" layoutY="51.0" size="20" />
+         </children>
+      </Pane>
+      <Pane layoutX="37.0" layoutY="417.0" prefHeight="238.0" prefWidth="494.0">
+         <children>
+            <Label layoutX="59.0" layoutY="23.0" text="Réservation Hotel :" textFill="#e8865c">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="90.0" text="Impot">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="149.0" text="Sous-Total">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="208.0" text="Total">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="hoteltotal" layoutX="173.0" layoutY="204.0" />
+            <TextField fx:id="hotelimpot" layoutX="173.0" layoutY="88.0" />
+            <TextField fx:id="hotelstotal" layoutX="173.0" layoutY="146.0" />
+            <FontAwesomeIcon fill="#e8865c" glyphName="HOTEL" layoutX="31.0" layoutY="46.0" size="20" />
+         </children>
+      </Pane>
+      <TextArea fx:id="facture" layoutX="654.0" layoutY="232.0" onDragDetected="#afficheinfo" prefHeight="431.0" prefWidth="308.0" />
+      <Label alignment="CENTER" layoutX="709.0" layoutY="181.0" prefHeight="46.0" prefWidth="195.0" text="Facture" textFill="#e8865c">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="#e8865c" glyphName="COPY" layoutX="717.0" layoutY="211.0" size="30" />
+   </children>
+</AnchorPane>

@@ -12,7 +12,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage Stage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("/view/login.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("/view/voyageorganiser.fxml"));
 			Scene scene = new Scene(root);
 			Stage.initStyle(StageStyle.TRANSPARENT);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());

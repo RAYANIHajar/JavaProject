@@ -2,18 +2,18 @@ package Controller;
 
 import java.net.URL;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import java.util.ResourceBundle;
-
 import javafx.fxml.Initializable;
 
 public class LoginController implements Initializable{
 	
-    @FXML
+	@FXML
     private FontAwesomeIcon fermer;
 
     @FXML
@@ -27,7 +27,17 @@ public class LoginController implements Initializable{
 
     @FXML
     private Hyperlink reset;
-    
+
+    @FXML
+    void confirmcompte(ActionEvent event) {
+
+    }
+
+    @FXML
+    void resetcompte(ActionEvent event) {
+
+    }
+
     
 
 	public void initialize(URL arg0, ResourceBundle arg1) {
